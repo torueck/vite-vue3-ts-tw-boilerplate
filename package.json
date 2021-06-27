@@ -3,15 +3,25 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "lint": "npm-run-all lint:ts",
+    "lint:fix": "npm-run-all lint:ts:fix",
+    "lint:ts": "eslint --ext .js,.ts,.vue --ignore-path .gitignore --cache .",
+    "lint:ts:fix": "yarn lint:ts --fix"
   },
   "dependencies": {
     "vue": "^3.0.5"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
     "@vitejs/plugin-vue": "^1.2.3",
     "@vue/compiler-sfc": "^3.0.5",
-    "typescript": "^4.3.2",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "eslint": "^7.29.0",
+    "eslint-plugin-vue": "^7.12.1",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^4.3.4",
     "vite": "^2.3.8",
     "vue-tsc": "^0.0.24"
   }
