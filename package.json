@@ -1,5 +1,7 @@
 {
-  "version": "0.0.0",
+  "name": "vite-vue3-ts-boilerplate",
+  "description": "A vite, Vue 3, TypeScript with ESLint and Prettier boilerplate",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
