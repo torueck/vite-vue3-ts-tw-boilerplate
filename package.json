@@ -7,10 +7,11 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
-    "lint": "npm-run-all lint:ts",
+    "lint": "npm-run-all lint:ts lint:markup",
     "lint:fix": "npm-run-all lint:ts:fix",
     "lint:ts": "eslint --ext .js,.ts,.vue --ignore-path .gitignore --cache .",
-    "lint:ts:fix": "yarn lint:ts --fix"
+    "lint:ts:fix": "yarn lint:ts --fix",
+    "lint:markup": "vue-tsc --noEmit"
   },
   "dependencies": {
     "vue": "^3.0.5"
