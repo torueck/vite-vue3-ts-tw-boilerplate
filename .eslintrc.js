@@ -30,5 +30,12 @@ module.exports = {
         '@typescript-eslint/no-explicit-any': 'off',
       },
     },
+    {
+      files: ['*.vue'],
+      rules: {
+        // For now we have to disable this because e.g. props are created in <script setup> but not referenced otherwise.
+        '@typescript-eslint/no-unused-vars': 'off',
+      },
+    },
   ],
 };

@@ -15,18 +15,25 @@
   </div>
 </template>
 
-<script lang="ts">
-import { ref, defineComponent } from 'vue';
+<script lang="ts" setup>
+import { ref } from 'vue';
 import TBtn from './atoms/TBtn.vue';
 
-export default defineComponent({
-  name: 'HelloWorld',
-  components: {
-    TBtn,
-  },
-  setup: () => {
-    const count = ref(0);
-    return { count };
-  },
-});
+const count = ref(0);
+</script>
+
+<script lang="ts">
+// import { ref, defineComponent } from 'vue';
+// import TBtn from './atoms/TBtn.vue';
+
+// export default defineComponent({
+//   name: 'HelloWorld',
+//   components: {
+//     TBtn,
+//   },
+//   setup: () => {
+//     const count = ref(0);
+//     return { count };
+//   },
+// });
 </script>

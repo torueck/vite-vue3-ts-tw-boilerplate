@@ -3,14 +3,18 @@
   <HelloWorld msg="Vue 3 + TypeScript + Tailwind + Vite " />
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script lang="ts" setup>
 import HelloWorld from '@/components/HelloWorld.vue';
+</script>
 
-export default defineComponent({
-  name: 'App',
-  components: {
-    HelloWorld,
-  },
-});
+<script lang="ts">
+// import { defineComponent } from 'vue';
+// import HelloWorld from '@/components/HelloWorld.vue';
+
+// export default defineComponent({
+//   name: 'App',
+//   components: {
+//     HelloWorld,
+//   },
+// });
 </script>

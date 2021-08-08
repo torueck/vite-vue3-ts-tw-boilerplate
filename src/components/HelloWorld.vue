@@ -64,18 +64,27 @@
   <counter-example class="mt-8"></counter-example>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script lang="ts" setup>
+import { defineProps } from 'vue';
 import CounterExample from './CounterExample.vue';
 
-export default defineComponent({
-  name: 'HelloWorld',
-  components: { CounterExample },
-  props: {
-    msg: {
-      type: String,
-      required: true,
-    },
-  },
+const props = defineProps({
+  msg: { type: String, required: true },
 });
+</script>
+
+<script lang="ts">
+// import { defineComponent } from 'vue';
+// import CounterExample from './CounterExample.vue';
+
+// export default defineComponent({
+//   name: 'HelloWorld',
+//   components: { CounterExample },
+//   props: {
+//     msg: {
+//       type: String,
+//       required: true,
+//     },
+//   },
+// });
 </script>
