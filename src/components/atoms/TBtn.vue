@@ -2,13 +2,21 @@
   <button
     class="
       px-4
-      py-1
-      text-sm text-green-600
-      font-semibold
+      py-2
+      font-medium
+      tracking-wide
+      text-white
+      capitalize
+      transition-colors
+      duration-200
+      transform
       rounded-md
-      bg-white
-      border border-green-400
-      hover:text-white hover:bg-green-600 hover:border-transparent
+      bg-blue-600
+      dark:bg-gray-800
+      hover:bg-blue-500
+      dark:hover:bg-gray-700
+      focus:outline-none focus:bg-blue-500
+      dark:focus:bg-gray-700
     "
   >
     <slot></slot>

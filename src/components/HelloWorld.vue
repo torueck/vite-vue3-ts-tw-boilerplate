@@ -47,39 +47,35 @@
       <a href="https://v3.vuejs.org/" target="_blank" class="text-green-600"
         >Vue 3 Docs</a
       >
+      |
+      <a
+        href="https://tailwindcss.com/docs"
+        target="_blank"
+        class="text-green-600"
+        >Tailwind CSS Docs</a
+      >
     </p>
     <p>
       Edit
       <code class="inline-code">components/HelloWorld.vue</code>
       to test hot module replacement.
     </p>
-
-    <t-btn class="mt-4" @click="count--">Decrease</t-btn>
-    <t-btn class="mt-4 ml-2" @click="count++">Increase</t-btn>
-    <div class="mt-2 font-semibold">count is: {{ count }}</div>
   </div>
+  <counter-example class="mt-8"></counter-example>
 </template>
 
 <script lang="ts">
-import { ref, defineComponent } from 'vue';
-import TBtn from './atoms/TBtn.vue';
+import { defineComponent } from 'vue';
+import CounterExample from './CounterExample.vue';
 
 export default defineComponent({
   name: 'HelloWorld',
-  components: {
-    TBtn,
-  },
+  components: { CounterExample },
   props: {
     msg: {
       type: String,
       required: true,
     },
   },
-  setup: () => {
-    const count = ref(0);
-    return { count };
-  },
 });
 </script>
-
-<style scoped></style>

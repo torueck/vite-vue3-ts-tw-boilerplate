@@ -1,6 +1,6 @@
 <template>
   <img class="mx-auto mt-16" alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <HelloWorld msg="Vue 3 + TypeScript + Tailwind + Vite " />
 </template>
 
 <script lang="ts">
@@ -14,5 +14,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style></style>
