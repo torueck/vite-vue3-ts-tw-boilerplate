@@ -3,6 +3,9 @@
   "description": "A vite, Vue 3, TypeScript, and Tailwind CSS with ESLint and Prettier boilerplate",
   "version": "1.0.0",
   "license": "MIT",
+  "keywords": [
+    "vite", "vue3", "typescript", "tailwind", "eslint", "prettier", "jest", "vue-testing-library"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
