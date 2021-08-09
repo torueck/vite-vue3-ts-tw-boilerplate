@@ -15,9 +15,9 @@ It also adds linting with ESLint, auto formatting with Prettier and unit testing
 ## Using `<script setup>`
 
 [`<script setup>`](https://github.com/vuejs/rfcs/pull/227) is a feature that is currently in RFC stage.
-It aims for simplifying the setup script for SFC by exposing all top level bindings to the template.
+It aims for simplifying the setup script for SFCs by exposing all top level bindings to the template.
 
-The example components currently use the regular composition API syntax, but the exact same code in `<script setup>` syntax is also available. If you want to use this, simple comment this in and remove the script block with the regular composition API code.
+The example components currently use the regular composition API syntax, but the exact same code in `<script setup>` syntax is also available. If you want to use this, simply comment this in and remove the script block with the regular composition API code.
 
 ## Testing Vue 3 Components
 
