@@ -1,14 +1,22 @@
-# Vue 3 + Typescript + Vite
+# Vue 3 + Typescript + Tailwind CSS + Vite
 
-This template should help get you started developing with Vue 3 and Typescript in Vite.
+This template should help get you started developing with Vue 3, Typescript and Tailwind CSS in Vite.  
+It also adds linting with ESLint, auto formatting with Prettier and unit testing with Jest and Vue Testing Library.
 
 ## Recommended IDE Setup
 
+[Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss): autocomplete, linting, CSS syntax highlighting
+
 [VSCode](https://code.visualstudio.com/) + [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). Make sure to enable `vetur.experimental.templateInterpolationService` in settings!
 
-### If Using `<script setup>`
+> **Note:** If Using [`<script setup>`](https://github.com/vuejs/rfcs/pull/227): this is a feature that is currently in RFC stage.  
+> To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur (and disable Vetur).
 
-[`<script setup>`](https://github.com/vuejs/rfcs/pull/227) is a feature that is currently in RFC stage. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur (and disable Vetur).
+## Testing Vue 3 Components
+
+Testing is done using [Jest](https://jestjs.io/docs/getting-started) as a test runnder and [Vue Testing Library](https://github.com/testing-library/vue-testing-library) for component testing.
+
+> **Note:** To make jest be able to load `.vue` SFC files from Vue 3, we need to use the pre-release version of [vue-jest](https://github.com/vuejs/vue-jest/releases). Similarly we need to use the pre-release version of [Vue Testing library](https://github.com/testing-library/vue-testing-library/issues/176).
 
 ## Type Support For `.vue` Imports in TS
 

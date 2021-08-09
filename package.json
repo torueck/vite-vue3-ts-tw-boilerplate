@@ -1,6 +1,6 @@
 {
-  "name": "vite-vue3-ts-boilerplate",
-  "description": "A vite, Vue 3, TypeScript with ESLint and Prettier boilerplate",
+  "name": "vite-vue3-ts-tw-boilerplate",
+  "description": "A vite, Vue 3, TypeScript, and Tailwind CSS with ESLint and Prettier boilerplate",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
