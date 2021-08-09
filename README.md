@@ -12,6 +12,13 @@ It also adds linting with ESLint, auto formatting with Prettier and unit testing
 > **Note:** If Using [`<script setup>`](https://github.com/vuejs/rfcs/pull/227): this is a feature that is currently in RFC stage.  
 > To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur (and disable Vetur).
 
+## Using `<script setup>`
+
+[`<script setup>`](https://github.com/vuejs/rfcs/pull/227) is a feature that is currently in RFC stage.
+It aims for simplifying the setup script for SFC by exposing all top level bindings to the template.
+
+The example components currently use the regular composition API syntax, but the exact same code in `<script setup>` syntax is also available. If you want to use this, simple comment this in and remove the script block with the regular composition API code.
+
 ## Testing Vue 3 Components
 
 Testing is done using [Jest](https://jestjs.io/docs/getting-started) as a test runnder and [Vue Testing Library](https://github.com/testing-library/vue-testing-library) for component testing.

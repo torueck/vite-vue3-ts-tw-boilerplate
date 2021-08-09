@@ -64,27 +64,35 @@
   <counter-example class="mt-8"></counter-example>
 </template>
 
-<script lang="ts" setup>
+<!-- 
+// ----------------------------------------------------------------------------------------
+// If you want to use the `<script setup>` syntax instead of the regular composition API,
+// comment out the following block and remove the regular `<script>` block below.
+// Remember, that you might want to use Volar instead of Vetur in this case - see README
+// for details.
+// ---------------------------------------------------------------------------------------- 
+-->
+<!-- <script lang="ts" setup>
 import { defineProps } from 'vue';
 import CounterExample from './CounterExample.vue';
 
 const props = defineProps({
   msg: { type: String, required: true },
 });
-</script>
+</script> -->
 
 <script lang="ts">
-// import { defineComponent } from 'vue';
-// import CounterExample from './CounterExample.vue';
+import { defineComponent } from 'vue';
+import CounterExample from './CounterExample.vue';
 
-// export default defineComponent({
-//   name: 'HelloWorld',
-//   components: { CounterExample },
-//   props: {
-//     msg: {
-//       type: String,
-//       required: true,
-//     },
-//   },
-// });
+export default defineComponent({
+  name: 'HelloWorld',
+  components: { CounterExample },
+  props: {
+    msg: {
+      type: String,
+      required: true,
+    },
+  },
+});
 </script>

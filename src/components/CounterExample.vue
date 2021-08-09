@@ -15,25 +15,33 @@
   </div>
 </template>
 
-<script lang="ts" setup>
+<!-- 
+// ----------------------------------------------------------------------------------------
+// If you want to use the `<script setup>` syntax instead of the regular composition API,
+// comment out the following block and remove the regular `<script>` block below.
+// Remember, that you might want to use Volar instead of Vetur in this case - see README
+// for details.
+// ---------------------------------------------------------------------------------------- 
+-->
+<!-- <script lang="ts" setup>
 import { ref } from 'vue';
 import TBtn from './atoms/TBtn.vue';
 
 const count = ref(0);
-</script>
+</script> -->
 
 <script lang="ts">
-// import { ref, defineComponent } from 'vue';
-// import TBtn from './atoms/TBtn.vue';
+import { ref, defineComponent } from 'vue';
+import TBtn from './atoms/TBtn.vue';
 
-// export default defineComponent({
-//   name: 'HelloWorld',
-//   components: {
-//     TBtn,
-//   },
-//   setup: () => {
-//     const count = ref(0);
-//     return { count };
-//   },
-// });
+export default defineComponent({
+  name: 'HelloWorld',
+  components: {
+    TBtn,
+  },
+  setup: () => {
+    const count = ref(0);
+    return { count };
+  },
+});
 </script>
