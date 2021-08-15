@@ -35,7 +35,6 @@ import { ref, defineComponent } from 'vue';
 import TBtn from './atoms/TBtn.vue';
 
 export default defineComponent({
-  name: 'HelloWorld',
   components: {
     TBtn,
   },

@@ -86,7 +86,6 @@ import { defineComponent } from 'vue';
 import CounterExample from './CounterExample.vue';
 
 export default defineComponent({
-  name: 'HelloWorld',
   components: { CounterExample },
   props: {
     msg: {
