@@ -4,7 +4,14 @@
   "version": "1.0.0",
   "license": "MIT",
   "keywords": [
-    "vite", "vue3", "typescript", "tailwind", "eslint", "prettier", "jest", "vue-testing-library"
+    "vite",
+    "vue3",
+    "typescript",
+    "tailwind",
+    "eslint",
+    "prettier",
+    "jest",
+    "vue-testing-library"
   ],
   "scripts": {
     "dev": "vite",
@@ -26,7 +33,7 @@
     "@commitlint/config-conventional": "^13.1.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/vue": "^6.4.2",
-    "@types/jest": "^26.0.24",
+    "@types/jest": "^27.0.1",
     "@types/node": "^16.4.10",
     "@typescript-eslint/eslint-plugin": "^4.28.0",
     "@typescript-eslint/parser": "^4.28.0",
